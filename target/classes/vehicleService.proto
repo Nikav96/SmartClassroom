@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_package = "net.vbunova.grpc";
+
+//service
+
+service vehicleService {
+
+  rpc getVehicleInformation(VehicleInformationRequest) returns (VehicleInformationResponse);
+
+}
+
+message VehicleInformationRequest {}
+
+message VehicleInformationResponse {
+  int32 vehicleId = 1;
+  string metadata = 2;
+}

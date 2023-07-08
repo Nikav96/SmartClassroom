@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>net.vbunova</groupId>
-  <artifactId>smart-classroom-grpc-services</artifactId>
+  <artifactId>smart-city-grpc-services</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>smart-classroom-grpc-services</name>
+  <name>smart-city-grpc-services</name>
   <url>http://maven.apache.org</url>
 
   <properties>

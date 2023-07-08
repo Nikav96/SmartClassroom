@@ -1,1 +1,1 @@
-# SmartClassroom - project gRPC
+# SmartCity - project gRPC
