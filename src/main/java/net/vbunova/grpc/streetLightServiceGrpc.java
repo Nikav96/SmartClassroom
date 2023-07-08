@@ -59,6 +59,102 @@ public final class streetLightServiceGrpc {
      return getActivateLightsMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<net.vbunova.grpc.StreetLightService.LightsRealtimeMapRequest,
+      net.vbunova.grpc.StreetLightService.LightsRealtimeMapResponse> getGetLightsRealtimeMapMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "getLightsRealtimeMap",
+      requestType = net.vbunova.grpc.StreetLightService.LightsRealtimeMapRequest.class,
+      responseType = net.vbunova.grpc.StreetLightService.LightsRealtimeMapResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+  public static io.grpc.MethodDescriptor<net.vbunova.grpc.StreetLightService.LightsRealtimeMapRequest,
+      net.vbunova.grpc.StreetLightService.LightsRealtimeMapResponse> getGetLightsRealtimeMapMethod() {
+    io.grpc.MethodDescriptor<net.vbunova.grpc.StreetLightService.LightsRealtimeMapRequest, net.vbunova.grpc.StreetLightService.LightsRealtimeMapResponse> getGetLightsRealtimeMapMethod;
+    if ((getGetLightsRealtimeMapMethod = streetLightServiceGrpc.getGetLightsRealtimeMapMethod) == null) {
+      synchronized (streetLightServiceGrpc.class) {
+        if ((getGetLightsRealtimeMapMethod = streetLightServiceGrpc.getGetLightsRealtimeMapMethod) == null) {
+          streetLightServiceGrpc.getGetLightsRealtimeMapMethod = getGetLightsRealtimeMapMethod = 
+              io.grpc.MethodDescriptor.<net.vbunova.grpc.StreetLightService.LightsRealtimeMapRequest, net.vbunova.grpc.StreetLightService.LightsRealtimeMapResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "streetLightService", "getLightsRealtimeMap"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.StreetLightService.LightsRealtimeMapRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.StreetLightService.LightsRealtimeMapResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new streetLightServiceMethodDescriptorSupplier("getLightsRealtimeMap"))
+                  .build();
+          }
+        }
+     }
+     return getGetLightsRealtimeMapMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteRequest,
+      net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteResponse> getShareSpeedAndRouteMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "shareSpeedAndRoute",
+      requestType = net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteRequest.class,
+      responseType = net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
+  public static io.grpc.MethodDescriptor<net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteRequest,
+      net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteResponse> getShareSpeedAndRouteMethod() {
+    io.grpc.MethodDescriptor<net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteRequest, net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteResponse> getShareSpeedAndRouteMethod;
+    if ((getShareSpeedAndRouteMethod = streetLightServiceGrpc.getShareSpeedAndRouteMethod) == null) {
+      synchronized (streetLightServiceGrpc.class) {
+        if ((getShareSpeedAndRouteMethod = streetLightServiceGrpc.getShareSpeedAndRouteMethod) == null) {
+          streetLightServiceGrpc.getShareSpeedAndRouteMethod = getShareSpeedAndRouteMethod = 
+              io.grpc.MethodDescriptor.<net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteRequest, net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "streetLightService", "shareSpeedAndRoute"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new streetLightServiceMethodDescriptorSupplier("shareSpeedAndRoute"))
+                  .build();
+          }
+        }
+     }
+     return getShareSpeedAndRouteMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<net.vbunova.grpc.StreetLightService.SendChatMessageRequest,
+      net.vbunova.grpc.StreetLightService.SendChatMessageResponse> getSendChatMessageMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "sendChatMessage",
+      requestType = net.vbunova.grpc.StreetLightService.SendChatMessageRequest.class,
+      responseType = net.vbunova.grpc.StreetLightService.SendChatMessageResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+  public static io.grpc.MethodDescriptor<net.vbunova.grpc.StreetLightService.SendChatMessageRequest,
+      net.vbunova.grpc.StreetLightService.SendChatMessageResponse> getSendChatMessageMethod() {
+    io.grpc.MethodDescriptor<net.vbunova.grpc.StreetLightService.SendChatMessageRequest, net.vbunova.grpc.StreetLightService.SendChatMessageResponse> getSendChatMessageMethod;
+    if ((getSendChatMessageMethod = streetLightServiceGrpc.getSendChatMessageMethod) == null) {
+      synchronized (streetLightServiceGrpc.class) {
+        if ((getSendChatMessageMethod = streetLightServiceGrpc.getSendChatMessageMethod) == null) {
+          streetLightServiceGrpc.getSendChatMessageMethod = getSendChatMessageMethod = 
+              io.grpc.MethodDescriptor.<net.vbunova.grpc.StreetLightService.SendChatMessageRequest, net.vbunova.grpc.StreetLightService.SendChatMessageResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "streetLightService", "sendChatMessage"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.StreetLightService.SendChatMessageRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.StreetLightService.SendChatMessageResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new streetLightServiceMethodDescriptorSupplier("sendChatMessage"))
+                  .build();
+          }
+        }
+     }
+     return getSendChatMessageMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -93,6 +189,27 @@ public final class streetLightServiceGrpc {
       asyncUnimplementedUnaryCall(getActivateLightsMethod(), responseObserver);
     }
 
+    /**
+     */
+    public void getLightsRealtimeMap(net.vbunova.grpc.StreetLightService.LightsRealtimeMapRequest request,
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLightService.LightsRealtimeMapResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getGetLightsRealtimeMapMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteRequest> shareSpeedAndRoute(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteResponse> responseObserver) {
+      return asyncUnimplementedStreamingCall(getShareSpeedAndRouteMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLightService.SendChatMessageRequest> sendChatMessage(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLightService.SendChatMessageResponse> responseObserver) {
+      return asyncUnimplementedStreamingCall(getSendChatMessageMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -102,6 +219,27 @@ public final class streetLightServiceGrpc {
                 net.vbunova.grpc.StreetLightService.ActivateLightsRequest,
                 net.vbunova.grpc.StreetLightService.ActivateLightsResponse>(
                   this, METHODID_ACTIVATE_LIGHTS)))
+          .addMethod(
+            getGetLightsRealtimeMapMethod(),
+            asyncServerStreamingCall(
+              new MethodHandlers<
+                net.vbunova.grpc.StreetLightService.LightsRealtimeMapRequest,
+                net.vbunova.grpc.StreetLightService.LightsRealtimeMapResponse>(
+                  this, METHODID_GET_LIGHTS_REALTIME_MAP)))
+          .addMethod(
+            getShareSpeedAndRouteMethod(),
+            asyncClientStreamingCall(
+              new MethodHandlers<
+                net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteRequest,
+                net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteResponse>(
+                  this, METHODID_SHARE_SPEED_AND_ROUTE)))
+          .addMethod(
+            getSendChatMessageMethod(),
+            asyncBidiStreamingCall(
+              new MethodHandlers<
+                net.vbunova.grpc.StreetLightService.SendChatMessageRequest,
+                net.vbunova.grpc.StreetLightService.SendChatMessageResponse>(
+                  this, METHODID_SEND_CHAT_MESSAGE)))
           .build();
     }
   }
@@ -131,6 +269,30 @@ public final class streetLightServiceGrpc {
       asyncUnaryCall(
           getChannel().newCall(getActivateLightsMethod(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void getLightsRealtimeMap(net.vbunova.grpc.StreetLightService.LightsRealtimeMapRequest request,
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLightService.LightsRealtimeMapResponse> responseObserver) {
+      asyncServerStreamingCall(
+          getChannel().newCall(getGetLightsRealtimeMapMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteRequest> shareSpeedAndRoute(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteResponse> responseObserver) {
+      return asyncClientStreamingCall(
+          getChannel().newCall(getShareSpeedAndRouteMethod(), getCallOptions()), responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLightService.SendChatMessageRequest> sendChatMessage(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLightService.SendChatMessageResponse> responseObserver) {
+      return asyncBidiStreamingCall(
+          getChannel().newCall(getSendChatMessageMethod(), getCallOptions()), responseObserver);
+    }
   }
 
   /**
@@ -156,6 +318,14 @@ public final class streetLightServiceGrpc {
     public net.vbunova.grpc.StreetLightService.ActivateLightsResponse activateLights(net.vbunova.grpc.StreetLightService.ActivateLightsRequest request) {
       return blockingUnaryCall(
           getChannel(), getActivateLightsMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public java.util.Iterator<net.vbunova.grpc.StreetLightService.LightsRealtimeMapResponse> getLightsRealtimeMap(
+        net.vbunova.grpc.StreetLightService.LightsRealtimeMapRequest request) {
+      return blockingServerStreamingCall(
+          getChannel(), getGetLightsRealtimeMapMethod(), getCallOptions(), request);
     }
   }
 
@@ -187,6 +357,9 @@ public final class streetLightServiceGrpc {
   }
 
   private static final int METHODID_ACTIVATE_LIGHTS = 0;
+  private static final int METHODID_GET_LIGHTS_REALTIME_MAP = 1;
+  private static final int METHODID_SHARE_SPEED_AND_ROUTE = 2;
+  private static final int METHODID_SEND_CHAT_MESSAGE = 3;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -209,6 +382,10 @@ public final class streetLightServiceGrpc {
           serviceImpl.activateLights((net.vbunova.grpc.StreetLightService.ActivateLightsRequest) request,
               (io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLightService.ActivateLightsResponse>) responseObserver);
           break;
+        case METHODID_GET_LIGHTS_REALTIME_MAP:
+          serviceImpl.getLightsRealtimeMap((net.vbunova.grpc.StreetLightService.LightsRealtimeMapRequest) request,
+              (io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLightService.LightsRealtimeMapResponse>) responseObserver);
+          break;
         default:
           throw new AssertionError();
       }
@@ -219,6 +396,12 @@ public final class streetLightServiceGrpc {
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
+        case METHODID_SHARE_SPEED_AND_ROUTE:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.shareSpeedAndRoute(
+              (io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLightService.ShareSpeedAndRouteResponse>) responseObserver);
+        case METHODID_SEND_CHAT_MESSAGE:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.sendChatMessage(
+              (io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLightService.SendChatMessageResponse>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -271,6 +454,9 @@ public final class streetLightServiceGrpc {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new streetLightServiceFileDescriptorSupplier())
               .addMethod(getActivateLightsMethod())
+              .addMethod(getGetLightsRealtimeMapMethod())
+              .addMethod(getShareSpeedAndRouteMethod())
+              .addMethod(getSendChatMessageMethod())
               .build();
         }
       }

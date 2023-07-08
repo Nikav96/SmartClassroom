@@ -59,6 +59,102 @@ public final class vehicleServiceGrpc {
      return getGetVehicleInformationMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest,
+      net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse> getShareSpeedAndRouteMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "shareSpeedAndRoute",
+      requestType = net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest.class,
+      responseType = net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+  public static io.grpc.MethodDescriptor<net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest,
+      net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse> getShareSpeedAndRouteMethod() {
+    io.grpc.MethodDescriptor<net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest, net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse> getShareSpeedAndRouteMethod;
+    if ((getShareSpeedAndRouteMethod = vehicleServiceGrpc.getShareSpeedAndRouteMethod) == null) {
+      synchronized (vehicleServiceGrpc.class) {
+        if ((getShareSpeedAndRouteMethod = vehicleServiceGrpc.getShareSpeedAndRouteMethod) == null) {
+          vehicleServiceGrpc.getShareSpeedAndRouteMethod = getShareSpeedAndRouteMethod = 
+              io.grpc.MethodDescriptor.<net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest, net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "vehicleService", "shareSpeedAndRoute"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new vehicleServiceMethodDescriptorSupplier("shareSpeedAndRoute"))
+                  .build();
+          }
+        }
+     }
+     return getShareSpeedAndRouteMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<net.vbunova.grpc.VehicleService.NearbyVehiclesRequest,
+      net.vbunova.grpc.VehicleService.NearbyVehiclesResponse> getGetNearbyVehiclesMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "getNearbyVehicles",
+      requestType = net.vbunova.grpc.VehicleService.NearbyVehiclesRequest.class,
+      responseType = net.vbunova.grpc.VehicleService.NearbyVehiclesResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
+  public static io.grpc.MethodDescriptor<net.vbunova.grpc.VehicleService.NearbyVehiclesRequest,
+      net.vbunova.grpc.VehicleService.NearbyVehiclesResponse> getGetNearbyVehiclesMethod() {
+    io.grpc.MethodDescriptor<net.vbunova.grpc.VehicleService.NearbyVehiclesRequest, net.vbunova.grpc.VehicleService.NearbyVehiclesResponse> getGetNearbyVehiclesMethod;
+    if ((getGetNearbyVehiclesMethod = vehicleServiceGrpc.getGetNearbyVehiclesMethod) == null) {
+      synchronized (vehicleServiceGrpc.class) {
+        if ((getGetNearbyVehiclesMethod = vehicleServiceGrpc.getGetNearbyVehiclesMethod) == null) {
+          vehicleServiceGrpc.getGetNearbyVehiclesMethod = getGetNearbyVehiclesMethod = 
+              io.grpc.MethodDescriptor.<net.vbunova.grpc.VehicleService.NearbyVehiclesRequest, net.vbunova.grpc.VehicleService.NearbyVehiclesResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "vehicleService", "getNearbyVehicles"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.VehicleService.NearbyVehiclesRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.VehicleService.NearbyVehiclesResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new vehicleServiceMethodDescriptorSupplier("getNearbyVehicles"))
+                  .build();
+          }
+        }
+     }
+     return getGetNearbyVehiclesMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<net.vbunova.grpc.VehicleService.SendChatMessageRequest,
+      net.vbunova.grpc.VehicleService.SendChatMessageResponse> getSendChatMessageMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "sendChatMessage",
+      requestType = net.vbunova.grpc.VehicleService.SendChatMessageRequest.class,
+      responseType = net.vbunova.grpc.VehicleService.SendChatMessageResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+  public static io.grpc.MethodDescriptor<net.vbunova.grpc.VehicleService.SendChatMessageRequest,
+      net.vbunova.grpc.VehicleService.SendChatMessageResponse> getSendChatMessageMethod() {
+    io.grpc.MethodDescriptor<net.vbunova.grpc.VehicleService.SendChatMessageRequest, net.vbunova.grpc.VehicleService.SendChatMessageResponse> getSendChatMessageMethod;
+    if ((getSendChatMessageMethod = vehicleServiceGrpc.getSendChatMessageMethod) == null) {
+      synchronized (vehicleServiceGrpc.class) {
+        if ((getSendChatMessageMethod = vehicleServiceGrpc.getSendChatMessageMethod) == null) {
+          vehicleServiceGrpc.getSendChatMessageMethod = getSendChatMessageMethod = 
+              io.grpc.MethodDescriptor.<net.vbunova.grpc.VehicleService.SendChatMessageRequest, net.vbunova.grpc.VehicleService.SendChatMessageResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "vehicleService", "sendChatMessage"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.VehicleService.SendChatMessageRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.VehicleService.SendChatMessageResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new vehicleServiceMethodDescriptorSupplier("sendChatMessage"))
+                  .build();
+          }
+        }
+     }
+     return getSendChatMessageMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -93,6 +189,27 @@ public final class vehicleServiceGrpc {
       asyncUnimplementedUnaryCall(getGetVehicleInformationMethod(), responseObserver);
     }
 
+    /**
+     */
+    public void shareSpeedAndRoute(net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest request,
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getShareSpeedAndRouteMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.VehicleService.NearbyVehiclesRequest> getNearbyVehicles(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.VehicleService.NearbyVehiclesResponse> responseObserver) {
+      return asyncUnimplementedStreamingCall(getGetNearbyVehiclesMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.VehicleService.SendChatMessageRequest> sendChatMessage(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.VehicleService.SendChatMessageResponse> responseObserver) {
+      return asyncUnimplementedStreamingCall(getSendChatMessageMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -102,6 +219,27 @@ public final class vehicleServiceGrpc {
                 net.vbunova.grpc.VehicleService.VehicleInformationRequest,
                 net.vbunova.grpc.VehicleService.VehicleInformationResponse>(
                   this, METHODID_GET_VEHICLE_INFORMATION)))
+          .addMethod(
+            getShareSpeedAndRouteMethod(),
+            asyncServerStreamingCall(
+              new MethodHandlers<
+                net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest,
+                net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse>(
+                  this, METHODID_SHARE_SPEED_AND_ROUTE)))
+          .addMethod(
+            getGetNearbyVehiclesMethod(),
+            asyncClientStreamingCall(
+              new MethodHandlers<
+                net.vbunova.grpc.VehicleService.NearbyVehiclesRequest,
+                net.vbunova.grpc.VehicleService.NearbyVehiclesResponse>(
+                  this, METHODID_GET_NEARBY_VEHICLES)))
+          .addMethod(
+            getSendChatMessageMethod(),
+            asyncBidiStreamingCall(
+              new MethodHandlers<
+                net.vbunova.grpc.VehicleService.SendChatMessageRequest,
+                net.vbunova.grpc.VehicleService.SendChatMessageResponse>(
+                  this, METHODID_SEND_CHAT_MESSAGE)))
           .build();
     }
   }
@@ -131,6 +269,30 @@ public final class vehicleServiceGrpc {
       asyncUnaryCall(
           getChannel().newCall(getGetVehicleInformationMethod(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void shareSpeedAndRoute(net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest request,
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse> responseObserver) {
+      asyncServerStreamingCall(
+          getChannel().newCall(getShareSpeedAndRouteMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.VehicleService.NearbyVehiclesRequest> getNearbyVehicles(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.VehicleService.NearbyVehiclesResponse> responseObserver) {
+      return asyncClientStreamingCall(
+          getChannel().newCall(getGetNearbyVehiclesMethod(), getCallOptions()), responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.VehicleService.SendChatMessageRequest> sendChatMessage(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.VehicleService.SendChatMessageResponse> responseObserver) {
+      return asyncBidiStreamingCall(
+          getChannel().newCall(getSendChatMessageMethod(), getCallOptions()), responseObserver);
+    }
   }
 
   /**
@@ -156,6 +318,14 @@ public final class vehicleServiceGrpc {
     public net.vbunova.grpc.VehicleService.VehicleInformationResponse getVehicleInformation(net.vbunova.grpc.VehicleService.VehicleInformationRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetVehicleInformationMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public java.util.Iterator<net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse> shareSpeedAndRoute(
+        net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest request) {
+      return blockingServerStreamingCall(
+          getChannel(), getShareSpeedAndRouteMethod(), getCallOptions(), request);
     }
   }
 
@@ -187,6 +357,9 @@ public final class vehicleServiceGrpc {
   }
 
   private static final int METHODID_GET_VEHICLE_INFORMATION = 0;
+  private static final int METHODID_SHARE_SPEED_AND_ROUTE = 1;
+  private static final int METHODID_GET_NEARBY_VEHICLES = 2;
+  private static final int METHODID_SEND_CHAT_MESSAGE = 3;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -209,6 +382,10 @@ public final class vehicleServiceGrpc {
           serviceImpl.getVehicleInformation((net.vbunova.grpc.VehicleService.VehicleInformationRequest) request,
               (io.grpc.stub.StreamObserver<net.vbunova.grpc.VehicleService.VehicleInformationResponse>) responseObserver);
           break;
+        case METHODID_SHARE_SPEED_AND_ROUTE:
+          serviceImpl.shareSpeedAndRoute((net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest) request,
+              (io.grpc.stub.StreamObserver<net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse>) responseObserver);
+          break;
         default:
           throw new AssertionError();
       }
@@ -219,6 +396,12 @@ public final class vehicleServiceGrpc {
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
+        case METHODID_GET_NEARBY_VEHICLES:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.getNearbyVehicles(
+              (io.grpc.stub.StreamObserver<net.vbunova.grpc.VehicleService.NearbyVehiclesResponse>) responseObserver);
+        case METHODID_SEND_CHAT_MESSAGE:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.sendChatMessage(
+              (io.grpc.stub.StreamObserver<net.vbunova.grpc.VehicleService.SendChatMessageResponse>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -271,6 +454,9 @@ public final class vehicleServiceGrpc {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new vehicleServiceFileDescriptorSupplier())
               .addMethod(getGetVehicleInformationMethod())
+              .addMethod(getShareSpeedAndRouteMethod())
+              .addMethod(getGetNearbyVehiclesMethod())
+              .addMethod(getSendChatMessageMethod())
               .build();
         }
       }

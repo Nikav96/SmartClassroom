@@ -59,6 +59,102 @@ public final class geolocationServiceGrpc {
      return getGetLocationMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<net.vbunova.grpc.GeolocationService.NearbyVehiclesRequest,
+      net.vbunova.grpc.GeolocationService.NearbyVehiclesResponse> getGetNearbyVehiclesMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "getNearbyVehicles",
+      requestType = net.vbunova.grpc.GeolocationService.NearbyVehiclesRequest.class,
+      responseType = net.vbunova.grpc.GeolocationService.NearbyVehiclesResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+  public static io.grpc.MethodDescriptor<net.vbunova.grpc.GeolocationService.NearbyVehiclesRequest,
+      net.vbunova.grpc.GeolocationService.NearbyVehiclesResponse> getGetNearbyVehiclesMethod() {
+    io.grpc.MethodDescriptor<net.vbunova.grpc.GeolocationService.NearbyVehiclesRequest, net.vbunova.grpc.GeolocationService.NearbyVehiclesResponse> getGetNearbyVehiclesMethod;
+    if ((getGetNearbyVehiclesMethod = geolocationServiceGrpc.getGetNearbyVehiclesMethod) == null) {
+      synchronized (geolocationServiceGrpc.class) {
+        if ((getGetNearbyVehiclesMethod = geolocationServiceGrpc.getGetNearbyVehiclesMethod) == null) {
+          geolocationServiceGrpc.getGetNearbyVehiclesMethod = getGetNearbyVehiclesMethod = 
+              io.grpc.MethodDescriptor.<net.vbunova.grpc.GeolocationService.NearbyVehiclesRequest, net.vbunova.grpc.GeolocationService.NearbyVehiclesResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "geolocationService", "getNearbyVehicles"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.GeolocationService.NearbyVehiclesRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.GeolocationService.NearbyVehiclesResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new geolocationServiceMethodDescriptorSupplier("getNearbyVehicles"))
+                  .build();
+          }
+        }
+     }
+     return getGetNearbyVehiclesMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteRequest,
+      net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteResponse> getShareSpeedAndRouteMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "shareSpeedAndRoute",
+      requestType = net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteRequest.class,
+      responseType = net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
+  public static io.grpc.MethodDescriptor<net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteRequest,
+      net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteResponse> getShareSpeedAndRouteMethod() {
+    io.grpc.MethodDescriptor<net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteRequest, net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteResponse> getShareSpeedAndRouteMethod;
+    if ((getShareSpeedAndRouteMethod = geolocationServiceGrpc.getShareSpeedAndRouteMethod) == null) {
+      synchronized (geolocationServiceGrpc.class) {
+        if ((getShareSpeedAndRouteMethod = geolocationServiceGrpc.getShareSpeedAndRouteMethod) == null) {
+          geolocationServiceGrpc.getShareSpeedAndRouteMethod = getShareSpeedAndRouteMethod = 
+              io.grpc.MethodDescriptor.<net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteRequest, net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "geolocationService", "shareSpeedAndRoute"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new geolocationServiceMethodDescriptorSupplier("shareSpeedAndRoute"))
+                  .build();
+          }
+        }
+     }
+     return getShareSpeedAndRouteMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<net.vbunova.grpc.GeolocationService.SendChatMessageRequest,
+      net.vbunova.grpc.GeolocationService.SendChatMessageResponse> getSendChatMessageMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "sendChatMessage",
+      requestType = net.vbunova.grpc.GeolocationService.SendChatMessageRequest.class,
+      responseType = net.vbunova.grpc.GeolocationService.SendChatMessageResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+  public static io.grpc.MethodDescriptor<net.vbunova.grpc.GeolocationService.SendChatMessageRequest,
+      net.vbunova.grpc.GeolocationService.SendChatMessageResponse> getSendChatMessageMethod() {
+    io.grpc.MethodDescriptor<net.vbunova.grpc.GeolocationService.SendChatMessageRequest, net.vbunova.grpc.GeolocationService.SendChatMessageResponse> getSendChatMessageMethod;
+    if ((getSendChatMessageMethod = geolocationServiceGrpc.getSendChatMessageMethod) == null) {
+      synchronized (geolocationServiceGrpc.class) {
+        if ((getSendChatMessageMethod = geolocationServiceGrpc.getSendChatMessageMethod) == null) {
+          geolocationServiceGrpc.getSendChatMessageMethod = getSendChatMessageMethod = 
+              io.grpc.MethodDescriptor.<net.vbunova.grpc.GeolocationService.SendChatMessageRequest, net.vbunova.grpc.GeolocationService.SendChatMessageResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "geolocationService", "sendChatMessage"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.GeolocationService.SendChatMessageRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  net.vbunova.grpc.GeolocationService.SendChatMessageResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new geolocationServiceMethodDescriptorSupplier("sendChatMessage"))
+                  .build();
+          }
+        }
+     }
+     return getSendChatMessageMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -93,6 +189,27 @@ public final class geolocationServiceGrpc {
       asyncUnimplementedUnaryCall(getGetLocationMethod(), responseObserver);
     }
 
+    /**
+     */
+    public void getNearbyVehicles(net.vbunova.grpc.GeolocationService.NearbyVehiclesRequest request,
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.GeolocationService.NearbyVehiclesResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getGetNearbyVehiclesMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteRequest> shareSpeedAndRoute(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteResponse> responseObserver) {
+      return asyncUnimplementedStreamingCall(getShareSpeedAndRouteMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.GeolocationService.SendChatMessageRequest> sendChatMessage(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.GeolocationService.SendChatMessageResponse> responseObserver) {
+      return asyncUnimplementedStreamingCall(getSendChatMessageMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -102,6 +219,27 @@ public final class geolocationServiceGrpc {
                 net.vbunova.grpc.GeolocationService.LocationRequest,
                 net.vbunova.grpc.GeolocationService.LocationRequestResponse>(
                   this, METHODID_GET_LOCATION)))
+          .addMethod(
+            getGetNearbyVehiclesMethod(),
+            asyncServerStreamingCall(
+              new MethodHandlers<
+                net.vbunova.grpc.GeolocationService.NearbyVehiclesRequest,
+                net.vbunova.grpc.GeolocationService.NearbyVehiclesResponse>(
+                  this, METHODID_GET_NEARBY_VEHICLES)))
+          .addMethod(
+            getShareSpeedAndRouteMethod(),
+            asyncClientStreamingCall(
+              new MethodHandlers<
+                net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteRequest,
+                net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteResponse>(
+                  this, METHODID_SHARE_SPEED_AND_ROUTE)))
+          .addMethod(
+            getSendChatMessageMethod(),
+            asyncBidiStreamingCall(
+              new MethodHandlers<
+                net.vbunova.grpc.GeolocationService.SendChatMessageRequest,
+                net.vbunova.grpc.GeolocationService.SendChatMessageResponse>(
+                  this, METHODID_SEND_CHAT_MESSAGE)))
           .build();
     }
   }
@@ -131,6 +269,30 @@ public final class geolocationServiceGrpc {
       asyncUnaryCall(
           getChannel().newCall(getGetLocationMethod(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void getNearbyVehicles(net.vbunova.grpc.GeolocationService.NearbyVehiclesRequest request,
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.GeolocationService.NearbyVehiclesResponse> responseObserver) {
+      asyncServerStreamingCall(
+          getChannel().newCall(getGetNearbyVehiclesMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteRequest> shareSpeedAndRoute(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteResponse> responseObserver) {
+      return asyncClientStreamingCall(
+          getChannel().newCall(getShareSpeedAndRouteMethod(), getCallOptions()), responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.GeolocationService.SendChatMessageRequest> sendChatMessage(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.GeolocationService.SendChatMessageResponse> responseObserver) {
+      return asyncBidiStreamingCall(
+          getChannel().newCall(getSendChatMessageMethod(), getCallOptions()), responseObserver);
+    }
   }
 
   /**
@@ -156,6 +318,14 @@ public final class geolocationServiceGrpc {
     public net.vbunova.grpc.GeolocationService.LocationRequestResponse getLocation(net.vbunova.grpc.GeolocationService.LocationRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetLocationMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public java.util.Iterator<net.vbunova.grpc.GeolocationService.NearbyVehiclesResponse> getNearbyVehicles(
+        net.vbunova.grpc.GeolocationService.NearbyVehiclesRequest request) {
+      return blockingServerStreamingCall(
+          getChannel(), getGetNearbyVehiclesMethod(), getCallOptions(), request);
     }
   }
 
@@ -187,6 +357,9 @@ public final class geolocationServiceGrpc {
   }
 
   private static final int METHODID_GET_LOCATION = 0;
+  private static final int METHODID_GET_NEARBY_VEHICLES = 1;
+  private static final int METHODID_SHARE_SPEED_AND_ROUTE = 2;
+  private static final int METHODID_SEND_CHAT_MESSAGE = 3;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -209,6 +382,10 @@ public final class geolocationServiceGrpc {
           serviceImpl.getLocation((net.vbunova.grpc.GeolocationService.LocationRequest) request,
               (io.grpc.stub.StreamObserver<net.vbunova.grpc.GeolocationService.LocationRequestResponse>) responseObserver);
           break;
+        case METHODID_GET_NEARBY_VEHICLES:
+          serviceImpl.getNearbyVehicles((net.vbunova.grpc.GeolocationService.NearbyVehiclesRequest) request,
+              (io.grpc.stub.StreamObserver<net.vbunova.grpc.GeolocationService.NearbyVehiclesResponse>) responseObserver);
+          break;
         default:
           throw new AssertionError();
       }
@@ -219,6 +396,12 @@ public final class geolocationServiceGrpc {
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
+        case METHODID_SHARE_SPEED_AND_ROUTE:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.shareSpeedAndRoute(
+              (io.grpc.stub.StreamObserver<net.vbunova.grpc.GeolocationService.ShareSpeedAndRouteResponse>) responseObserver);
+        case METHODID_SEND_CHAT_MESSAGE:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.sendChatMessage(
+              (io.grpc.stub.StreamObserver<net.vbunova.grpc.GeolocationService.SendChatMessageResponse>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -271,6 +454,9 @@ public final class geolocationServiceGrpc {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new geolocationServiceFileDescriptorSupplier())
               .addMethod(getGetLocationMethod())
+              .addMethod(getGetNearbyVehiclesMethod())
+              .addMethod(getShareSpeedAndRouteMethod())
+              .addMethod(getSendChatMessageMethod())
               .build();
         }
       }

@@ -432,6 +432,2136 @@ public final class VehicleService {
 
   }
 
+  public interface ShareSpeedAndRouteRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:ShareSpeedAndRouteRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int32 vehicleId = 1;</code>
+     * @return The vehicleId.
+     */
+    int getVehicleId();
+
+    /**
+     * <code>string lat = 2;</code>
+     * @return The lat.
+     */
+    java.lang.String getLat();
+    /**
+     * <code>string lat = 2;</code>
+     * @return The bytes for lat.
+     */
+    com.google.protobuf.ByteString
+        getLatBytes();
+
+    /**
+     * <code>string lon = 3;</code>
+     * @return The lon.
+     */
+    java.lang.String getLon();
+    /**
+     * <code>string lon = 3;</code>
+     * @return The bytes for lon.
+     */
+    com.google.protobuf.ByteString
+        getLonBytes();
+  }
+  /**
+   * Protobuf type {@code ShareSpeedAndRouteRequest}
+   */
+  public  static final class ShareSpeedAndRouteRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:ShareSpeedAndRouteRequest)
+      ShareSpeedAndRouteRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ShareSpeedAndRouteRequest.newBuilder() to construct.
+    private ShareSpeedAndRouteRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ShareSpeedAndRouteRequest() {
+      lat_ = "";
+      lon_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new ShareSpeedAndRouteRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ShareSpeedAndRouteRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              vehicleId_ = input.readInt32();
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              lat_ = s;
+              break;
+            }
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              lon_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return net.vbunova.grpc.VehicleService.internal_static_ShareSpeedAndRouteRequest_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return net.vbunova.grpc.VehicleService.internal_static_ShareSpeedAndRouteRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest.class, net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest.Builder.class);
+    }
+
+    public static final int VEHICLEID_FIELD_NUMBER = 1;
+    private int vehicleId_;
+    /**
+     * <code>int32 vehicleId = 1;</code>
+     * @return The vehicleId.
+     */
+    public int getVehicleId() {
+      return vehicleId_;
+    }
+
+    public static final int LAT_FIELD_NUMBER = 2;
+    private volatile java.lang.Object lat_;
+    /**
+     * <code>string lat = 2;</code>
+     * @return The lat.
+     */
+    public java.lang.String getLat() {
+      java.lang.Object ref = lat_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        lat_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string lat = 2;</code>
+     * @return The bytes for lat.
+     */
+    public com.google.protobuf.ByteString
+        getLatBytes() {
+      java.lang.Object ref = lat_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        lat_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int LON_FIELD_NUMBER = 3;
+    private volatile java.lang.Object lon_;
+    /**
+     * <code>string lon = 3;</code>
+     * @return The lon.
+     */
+    public java.lang.String getLon() {
+      java.lang.Object ref = lon_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        lon_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string lon = 3;</code>
+     * @return The bytes for lon.
+     */
+    public com.google.protobuf.ByteString
+        getLonBytes() {
+      java.lang.Object ref = lon_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        lon_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (vehicleId_ != 0) {
+        output.writeInt32(1, vehicleId_);
+      }
+      if (!getLatBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, lat_);
+      }
+      if (!getLonBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, lon_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (vehicleId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, vehicleId_);
+      }
+      if (!getLatBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, lat_);
+      }
+      if (!getLonBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, lon_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest)) {
+        return super.equals(obj);
+      }
+      net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest other = (net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest) obj;
+
+      if (getVehicleId()
+          != other.getVehicleId()) return false;
+      if (!getLat()
+          .equals(other.getLat())) return false;
+      if (!getLon()
+          .equals(other.getLon())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + VEHICLEID_FIELD_NUMBER;
+      hash = (53 * hash) + getVehicleId();
+      hash = (37 * hash) + LAT_FIELD_NUMBER;
+      hash = (53 * hash) + getLat().hashCode();
+      hash = (37 * hash) + LON_FIELD_NUMBER;
+      hash = (53 * hash) + getLon().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code ShareSpeedAndRouteRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:ShareSpeedAndRouteRequest)
+        net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return net.vbunova.grpc.VehicleService.internal_static_ShareSpeedAndRouteRequest_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return net.vbunova.grpc.VehicleService.internal_static_ShareSpeedAndRouteRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest.class, net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest.Builder.class);
+      }
+
+      // Construct using net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        vehicleId_ = 0;
+
+        lat_ = "";
+
+        lon_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return net.vbunova.grpc.VehicleService.internal_static_ShareSpeedAndRouteRequest_descriptor;
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest getDefaultInstanceForType() {
+        return net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest build() {
+        net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest buildPartial() {
+        net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest result = new net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest(this);
+        result.vehicleId_ = vehicleId_;
+        result.lat_ = lat_;
+        result.lon_ = lon_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest) {
+          return mergeFrom((net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest other) {
+        if (other == net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest.getDefaultInstance()) return this;
+        if (other.getVehicleId() != 0) {
+          setVehicleId(other.getVehicleId());
+        }
+        if (!other.getLat().isEmpty()) {
+          lat_ = other.lat_;
+          onChanged();
+        }
+        if (!other.getLon().isEmpty()) {
+          lon_ = other.lon_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int vehicleId_ ;
+      /**
+       * <code>int32 vehicleId = 1;</code>
+       * @return The vehicleId.
+       */
+      public int getVehicleId() {
+        return vehicleId_;
+      }
+      /**
+       * <code>int32 vehicleId = 1;</code>
+       * @param value The vehicleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVehicleId(int value) {
+        
+        vehicleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 vehicleId = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearVehicleId() {
+        
+        vehicleId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object lat_ = "";
+      /**
+       * <code>string lat = 2;</code>
+       * @return The lat.
+       */
+      public java.lang.String getLat() {
+        java.lang.Object ref = lat_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          lat_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string lat = 2;</code>
+       * @return The bytes for lat.
+       */
+      public com.google.protobuf.ByteString
+          getLatBytes() {
+        java.lang.Object ref = lat_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          lat_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string lat = 2;</code>
+       * @param value The lat to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLat(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        lat_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string lat = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLat() {
+        
+        lat_ = getDefaultInstance().getLat();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string lat = 2;</code>
+       * @param value The bytes for lat to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLatBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        lat_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object lon_ = "";
+      /**
+       * <code>string lon = 3;</code>
+       * @return The lon.
+       */
+      public java.lang.String getLon() {
+        java.lang.Object ref = lon_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          lon_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string lon = 3;</code>
+       * @return The bytes for lon.
+       */
+      public com.google.protobuf.ByteString
+          getLonBytes() {
+        java.lang.Object ref = lon_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          lon_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string lon = 3;</code>
+       * @param value The lon to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLon(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        lon_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string lon = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLon() {
+        
+        lon_ = getDefaultInstance().getLon();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string lon = 3;</code>
+       * @param value The bytes for lon to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLonBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        lon_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:ShareSpeedAndRouteRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:ShareSpeedAndRouteRequest)
+    private static final net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest();
+    }
+
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ShareSpeedAndRouteRequest>
+        PARSER = new com.google.protobuf.AbstractParser<ShareSpeedAndRouteRequest>() {
+      @java.lang.Override
+      public ShareSpeedAndRouteRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ShareSpeedAndRouteRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ShareSpeedAndRouteRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ShareSpeedAndRouteRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public net.vbunova.grpc.VehicleService.ShareSpeedAndRouteRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface NearbyVehiclesRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:NearbyVehiclesRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string lat = 1;</code>
+     * @return The lat.
+     */
+    java.lang.String getLat();
+    /**
+     * <code>string lat = 1;</code>
+     * @return The bytes for lat.
+     */
+    com.google.protobuf.ByteString
+        getLatBytes();
+
+    /**
+     * <code>string lon = 2;</code>
+     * @return The lon.
+     */
+    java.lang.String getLon();
+    /**
+     * <code>string lon = 2;</code>
+     * @return The bytes for lon.
+     */
+    com.google.protobuf.ByteString
+        getLonBytes();
+  }
+  /**
+   * Protobuf type {@code NearbyVehiclesRequest}
+   */
+  public  static final class NearbyVehiclesRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:NearbyVehiclesRequest)
+      NearbyVehiclesRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use NearbyVehiclesRequest.newBuilder() to construct.
+    private NearbyVehiclesRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private NearbyVehiclesRequest() {
+      lat_ = "";
+      lon_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new NearbyVehiclesRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private NearbyVehiclesRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              lat_ = s;
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              lon_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return net.vbunova.grpc.VehicleService.internal_static_NearbyVehiclesRequest_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return net.vbunova.grpc.VehicleService.internal_static_NearbyVehiclesRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              net.vbunova.grpc.VehicleService.NearbyVehiclesRequest.class, net.vbunova.grpc.VehicleService.NearbyVehiclesRequest.Builder.class);
+    }
+
+    public static final int LAT_FIELD_NUMBER = 1;
+    private volatile java.lang.Object lat_;
+    /**
+     * <code>string lat = 1;</code>
+     * @return The lat.
+     */
+    public java.lang.String getLat() {
+      java.lang.Object ref = lat_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        lat_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string lat = 1;</code>
+     * @return The bytes for lat.
+     */
+    public com.google.protobuf.ByteString
+        getLatBytes() {
+      java.lang.Object ref = lat_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        lat_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int LON_FIELD_NUMBER = 2;
+    private volatile java.lang.Object lon_;
+    /**
+     * <code>string lon = 2;</code>
+     * @return The lon.
+     */
+    public java.lang.String getLon() {
+      java.lang.Object ref = lon_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        lon_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string lon = 2;</code>
+     * @return The bytes for lon.
+     */
+    public com.google.protobuf.ByteString
+        getLonBytes() {
+      java.lang.Object ref = lon_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        lon_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getLatBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, lat_);
+      }
+      if (!getLonBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, lon_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getLatBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, lat_);
+      }
+      if (!getLonBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, lon_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof net.vbunova.grpc.VehicleService.NearbyVehiclesRequest)) {
+        return super.equals(obj);
+      }
+      net.vbunova.grpc.VehicleService.NearbyVehiclesRequest other = (net.vbunova.grpc.VehicleService.NearbyVehiclesRequest) obj;
+
+      if (!getLat()
+          .equals(other.getLat())) return false;
+      if (!getLon()
+          .equals(other.getLon())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + LAT_FIELD_NUMBER;
+      hash = (53 * hash) + getLat().hashCode();
+      hash = (37 * hash) + LON_FIELD_NUMBER;
+      hash = (53 * hash) + getLon().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(net.vbunova.grpc.VehicleService.NearbyVehiclesRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code NearbyVehiclesRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:NearbyVehiclesRequest)
+        net.vbunova.grpc.VehicleService.NearbyVehiclesRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return net.vbunova.grpc.VehicleService.internal_static_NearbyVehiclesRequest_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return net.vbunova.grpc.VehicleService.internal_static_NearbyVehiclesRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                net.vbunova.grpc.VehicleService.NearbyVehiclesRequest.class, net.vbunova.grpc.VehicleService.NearbyVehiclesRequest.Builder.class);
+      }
+
+      // Construct using net.vbunova.grpc.VehicleService.NearbyVehiclesRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        lat_ = "";
+
+        lon_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return net.vbunova.grpc.VehicleService.internal_static_NearbyVehiclesRequest_descriptor;
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.NearbyVehiclesRequest getDefaultInstanceForType() {
+        return net.vbunova.grpc.VehicleService.NearbyVehiclesRequest.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.NearbyVehiclesRequest build() {
+        net.vbunova.grpc.VehicleService.NearbyVehiclesRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.NearbyVehiclesRequest buildPartial() {
+        net.vbunova.grpc.VehicleService.NearbyVehiclesRequest result = new net.vbunova.grpc.VehicleService.NearbyVehiclesRequest(this);
+        result.lat_ = lat_;
+        result.lon_ = lon_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof net.vbunova.grpc.VehicleService.NearbyVehiclesRequest) {
+          return mergeFrom((net.vbunova.grpc.VehicleService.NearbyVehiclesRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(net.vbunova.grpc.VehicleService.NearbyVehiclesRequest other) {
+        if (other == net.vbunova.grpc.VehicleService.NearbyVehiclesRequest.getDefaultInstance()) return this;
+        if (!other.getLat().isEmpty()) {
+          lat_ = other.lat_;
+          onChanged();
+        }
+        if (!other.getLon().isEmpty()) {
+          lon_ = other.lon_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        net.vbunova.grpc.VehicleService.NearbyVehiclesRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (net.vbunova.grpc.VehicleService.NearbyVehiclesRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object lat_ = "";
+      /**
+       * <code>string lat = 1;</code>
+       * @return The lat.
+       */
+      public java.lang.String getLat() {
+        java.lang.Object ref = lat_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          lat_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string lat = 1;</code>
+       * @return The bytes for lat.
+       */
+      public com.google.protobuf.ByteString
+          getLatBytes() {
+        java.lang.Object ref = lat_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          lat_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string lat = 1;</code>
+       * @param value The lat to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLat(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        lat_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string lat = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLat() {
+        
+        lat_ = getDefaultInstance().getLat();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string lat = 1;</code>
+       * @param value The bytes for lat to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLatBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        lat_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object lon_ = "";
+      /**
+       * <code>string lon = 2;</code>
+       * @return The lon.
+       */
+      public java.lang.String getLon() {
+        java.lang.Object ref = lon_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          lon_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string lon = 2;</code>
+       * @return The bytes for lon.
+       */
+      public com.google.protobuf.ByteString
+          getLonBytes() {
+        java.lang.Object ref = lon_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          lon_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string lon = 2;</code>
+       * @param value The lon to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLon(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        lon_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string lon = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLon() {
+        
+        lon_ = getDefaultInstance().getLon();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string lon = 2;</code>
+       * @param value The bytes for lon to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLonBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        lon_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:NearbyVehiclesRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:NearbyVehiclesRequest)
+    private static final net.vbunova.grpc.VehicleService.NearbyVehiclesRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new net.vbunova.grpc.VehicleService.NearbyVehiclesRequest();
+    }
+
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<NearbyVehiclesRequest>
+        PARSER = new com.google.protobuf.AbstractParser<NearbyVehiclesRequest>() {
+      @java.lang.Override
+      public NearbyVehiclesRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new NearbyVehiclesRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<NearbyVehiclesRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<NearbyVehiclesRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public net.vbunova.grpc.VehicleService.NearbyVehiclesRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface SendChatMessageRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:SendChatMessageRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int32 vehicleId = 1;</code>
+     * @return The vehicleId.
+     */
+    int getVehicleId();
+
+    /**
+     * <code>string message = 2;</code>
+     * @return The message.
+     */
+    java.lang.String getMessage();
+    /**
+     * <code>string message = 2;</code>
+     * @return The bytes for message.
+     */
+    com.google.protobuf.ByteString
+        getMessageBytes();
+  }
+  /**
+   * Protobuf type {@code SendChatMessageRequest}
+   */
+  public  static final class SendChatMessageRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:SendChatMessageRequest)
+      SendChatMessageRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use SendChatMessageRequest.newBuilder() to construct.
+    private SendChatMessageRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private SendChatMessageRequest() {
+      message_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new SendChatMessageRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SendChatMessageRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              vehicleId_ = input.readInt32();
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              message_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return net.vbunova.grpc.VehicleService.internal_static_SendChatMessageRequest_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return net.vbunova.grpc.VehicleService.internal_static_SendChatMessageRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              net.vbunova.grpc.VehicleService.SendChatMessageRequest.class, net.vbunova.grpc.VehicleService.SendChatMessageRequest.Builder.class);
+    }
+
+    public static final int VEHICLEID_FIELD_NUMBER = 1;
+    private int vehicleId_;
+    /**
+     * <code>int32 vehicleId = 1;</code>
+     * @return The vehicleId.
+     */
+    public int getVehicleId() {
+      return vehicleId_;
+    }
+
+    public static final int MESSAGE_FIELD_NUMBER = 2;
+    private volatile java.lang.Object message_;
+    /**
+     * <code>string message = 2;</code>
+     * @return The message.
+     */
+    public java.lang.String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        message_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string message = 2;</code>
+     * @return The bytes for message.
+     */
+    public com.google.protobuf.ByteString
+        getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (vehicleId_ != 0) {
+        output.writeInt32(1, vehicleId_);
+      }
+      if (!getMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, message_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (vehicleId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, vehicleId_);
+      }
+      if (!getMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, message_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof net.vbunova.grpc.VehicleService.SendChatMessageRequest)) {
+        return super.equals(obj);
+      }
+      net.vbunova.grpc.VehicleService.SendChatMessageRequest other = (net.vbunova.grpc.VehicleService.SendChatMessageRequest) obj;
+
+      if (getVehicleId()
+          != other.getVehicleId()) return false;
+      if (!getMessage()
+          .equals(other.getMessage())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + VEHICLEID_FIELD_NUMBER;
+      hash = (53 * hash) + getVehicleId();
+      hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getMessage().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static net.vbunova.grpc.VehicleService.SendChatMessageRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(net.vbunova.grpc.VehicleService.SendChatMessageRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code SendChatMessageRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:SendChatMessageRequest)
+        net.vbunova.grpc.VehicleService.SendChatMessageRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return net.vbunova.grpc.VehicleService.internal_static_SendChatMessageRequest_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return net.vbunova.grpc.VehicleService.internal_static_SendChatMessageRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                net.vbunova.grpc.VehicleService.SendChatMessageRequest.class, net.vbunova.grpc.VehicleService.SendChatMessageRequest.Builder.class);
+      }
+
+      // Construct using net.vbunova.grpc.VehicleService.SendChatMessageRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        vehicleId_ = 0;
+
+        message_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return net.vbunova.grpc.VehicleService.internal_static_SendChatMessageRequest_descriptor;
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.SendChatMessageRequest getDefaultInstanceForType() {
+        return net.vbunova.grpc.VehicleService.SendChatMessageRequest.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.SendChatMessageRequest build() {
+        net.vbunova.grpc.VehicleService.SendChatMessageRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.SendChatMessageRequest buildPartial() {
+        net.vbunova.grpc.VehicleService.SendChatMessageRequest result = new net.vbunova.grpc.VehicleService.SendChatMessageRequest(this);
+        result.vehicleId_ = vehicleId_;
+        result.message_ = message_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof net.vbunova.grpc.VehicleService.SendChatMessageRequest) {
+          return mergeFrom((net.vbunova.grpc.VehicleService.SendChatMessageRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(net.vbunova.grpc.VehicleService.SendChatMessageRequest other) {
+        if (other == net.vbunova.grpc.VehicleService.SendChatMessageRequest.getDefaultInstance()) return this;
+        if (other.getVehicleId() != 0) {
+          setVehicleId(other.getVehicleId());
+        }
+        if (!other.getMessage().isEmpty()) {
+          message_ = other.message_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        net.vbunova.grpc.VehicleService.SendChatMessageRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (net.vbunova.grpc.VehicleService.SendChatMessageRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int vehicleId_ ;
+      /**
+       * <code>int32 vehicleId = 1;</code>
+       * @return The vehicleId.
+       */
+      public int getVehicleId() {
+        return vehicleId_;
+      }
+      /**
+       * <code>int32 vehicleId = 1;</code>
+       * @param value The vehicleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVehicleId(int value) {
+        
+        vehicleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 vehicleId = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearVehicleId() {
+        
+        vehicleId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object message_ = "";
+      /**
+       * <code>string message = 2;</code>
+       * @return The message.
+       */
+      public java.lang.String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          message_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string message = 2;</code>
+       * @return The bytes for message.
+       */
+      public com.google.protobuf.ByteString
+          getMessageBytes() {
+        java.lang.Object ref = message_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          message_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string message = 2;</code>
+       * @param value The message to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMessage(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string message = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMessage() {
+        
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string message = 2;</code>
+       * @param value The bytes for message to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMessageBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:SendChatMessageRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:SendChatMessageRequest)
+    private static final net.vbunova.grpc.VehicleService.SendChatMessageRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new net.vbunova.grpc.VehicleService.SendChatMessageRequest();
+    }
+
+    public static net.vbunova.grpc.VehicleService.SendChatMessageRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<SendChatMessageRequest>
+        PARSER = new com.google.protobuf.AbstractParser<SendChatMessageRequest>() {
+      @java.lang.Override
+      public SendChatMessageRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SendChatMessageRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<SendChatMessageRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<SendChatMessageRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public net.vbunova.grpc.VehicleService.SendChatMessageRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface VehicleInformationResponseOrBuilder extends
       // @@protoc_insertion_point(interface_extends:VehicleInformationResponse)
       com.google.protobuf.MessageOrBuilder {
@@ -1066,16 +3196,1585 @@ public final class VehicleService {
 
   }
 
+  public interface ShareSpeedAndRouteResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:ShareSpeedAndRouteResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>bool status = 1;</code>
+     * @return The status.
+     */
+    boolean getStatus();
+  }
+  /**
+   * Protobuf type {@code ShareSpeedAndRouteResponse}
+   */
+  public  static final class ShareSpeedAndRouteResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:ShareSpeedAndRouteResponse)
+      ShareSpeedAndRouteResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ShareSpeedAndRouteResponse.newBuilder() to construct.
+    private ShareSpeedAndRouteResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ShareSpeedAndRouteResponse() {
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new ShareSpeedAndRouteResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ShareSpeedAndRouteResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              status_ = input.readBool();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return net.vbunova.grpc.VehicleService.internal_static_ShareSpeedAndRouteResponse_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return net.vbunova.grpc.VehicleService.internal_static_ShareSpeedAndRouteResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse.class, net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse.Builder.class);
+    }
+
+    public static final int STATUS_FIELD_NUMBER = 1;
+    private boolean status_;
+    /**
+     * <code>bool status = 1;</code>
+     * @return The status.
+     */
+    public boolean getStatus() {
+      return status_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (status_ != false) {
+        output.writeBool(1, status_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (status_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, status_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse)) {
+        return super.equals(obj);
+      }
+      net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse other = (net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse) obj;
+
+      if (getStatus()
+          != other.getStatus()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + STATUS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getStatus());
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code ShareSpeedAndRouteResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:ShareSpeedAndRouteResponse)
+        net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return net.vbunova.grpc.VehicleService.internal_static_ShareSpeedAndRouteResponse_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return net.vbunova.grpc.VehicleService.internal_static_ShareSpeedAndRouteResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse.class, net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse.Builder.class);
+      }
+
+      // Construct using net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        status_ = false;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return net.vbunova.grpc.VehicleService.internal_static_ShareSpeedAndRouteResponse_descriptor;
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse getDefaultInstanceForType() {
+        return net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse build() {
+        net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse buildPartial() {
+        net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse result = new net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse(this);
+        result.status_ = status_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse) {
+          return mergeFrom((net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse other) {
+        if (other == net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse.getDefaultInstance()) return this;
+        if (other.getStatus() != false) {
+          setStatus(other.getStatus());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private boolean status_ ;
+      /**
+       * <code>bool status = 1;</code>
+       * @return The status.
+       */
+      public boolean getStatus() {
+        return status_;
+      }
+      /**
+       * <code>bool status = 1;</code>
+       * @param value The status to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStatus(boolean value) {
+        
+        status_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool status = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStatus() {
+        
+        status_ = false;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:ShareSpeedAndRouteResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:ShareSpeedAndRouteResponse)
+    private static final net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse();
+    }
+
+    public static net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ShareSpeedAndRouteResponse>
+        PARSER = new com.google.protobuf.AbstractParser<ShareSpeedAndRouteResponse>() {
+      @java.lang.Override
+      public ShareSpeedAndRouteResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ShareSpeedAndRouteResponse(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ShareSpeedAndRouteResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ShareSpeedAndRouteResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public net.vbunova.grpc.VehicleService.ShareSpeedAndRouteResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface NearbyVehiclesResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:NearbyVehiclesResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int32 vehicleId = 1;</code>
+     * @return The vehicleId.
+     */
+    int getVehicleId();
+  }
+  /**
+   * Protobuf type {@code NearbyVehiclesResponse}
+   */
+  public  static final class NearbyVehiclesResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:NearbyVehiclesResponse)
+      NearbyVehiclesResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use NearbyVehiclesResponse.newBuilder() to construct.
+    private NearbyVehiclesResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private NearbyVehiclesResponse() {
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new NearbyVehiclesResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private NearbyVehiclesResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              vehicleId_ = input.readInt32();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return net.vbunova.grpc.VehicleService.internal_static_NearbyVehiclesResponse_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return net.vbunova.grpc.VehicleService.internal_static_NearbyVehiclesResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              net.vbunova.grpc.VehicleService.NearbyVehiclesResponse.class, net.vbunova.grpc.VehicleService.NearbyVehiclesResponse.Builder.class);
+    }
+
+    public static final int VEHICLEID_FIELD_NUMBER = 1;
+    private int vehicleId_;
+    /**
+     * <code>int32 vehicleId = 1;</code>
+     * @return The vehicleId.
+     */
+    public int getVehicleId() {
+      return vehicleId_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (vehicleId_ != 0) {
+        output.writeInt32(1, vehicleId_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (vehicleId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, vehicleId_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof net.vbunova.grpc.VehicleService.NearbyVehiclesResponse)) {
+        return super.equals(obj);
+      }
+      net.vbunova.grpc.VehicleService.NearbyVehiclesResponse other = (net.vbunova.grpc.VehicleService.NearbyVehiclesResponse) obj;
+
+      if (getVehicleId()
+          != other.getVehicleId()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + VEHICLEID_FIELD_NUMBER;
+      hash = (53 * hash) + getVehicleId();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(net.vbunova.grpc.VehicleService.NearbyVehiclesResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code NearbyVehiclesResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:NearbyVehiclesResponse)
+        net.vbunova.grpc.VehicleService.NearbyVehiclesResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return net.vbunova.grpc.VehicleService.internal_static_NearbyVehiclesResponse_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return net.vbunova.grpc.VehicleService.internal_static_NearbyVehiclesResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                net.vbunova.grpc.VehicleService.NearbyVehiclesResponse.class, net.vbunova.grpc.VehicleService.NearbyVehiclesResponse.Builder.class);
+      }
+
+      // Construct using net.vbunova.grpc.VehicleService.NearbyVehiclesResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        vehicleId_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return net.vbunova.grpc.VehicleService.internal_static_NearbyVehiclesResponse_descriptor;
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.NearbyVehiclesResponse getDefaultInstanceForType() {
+        return net.vbunova.grpc.VehicleService.NearbyVehiclesResponse.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.NearbyVehiclesResponse build() {
+        net.vbunova.grpc.VehicleService.NearbyVehiclesResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.NearbyVehiclesResponse buildPartial() {
+        net.vbunova.grpc.VehicleService.NearbyVehiclesResponse result = new net.vbunova.grpc.VehicleService.NearbyVehiclesResponse(this);
+        result.vehicleId_ = vehicleId_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof net.vbunova.grpc.VehicleService.NearbyVehiclesResponse) {
+          return mergeFrom((net.vbunova.grpc.VehicleService.NearbyVehiclesResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(net.vbunova.grpc.VehicleService.NearbyVehiclesResponse other) {
+        if (other == net.vbunova.grpc.VehicleService.NearbyVehiclesResponse.getDefaultInstance()) return this;
+        if (other.getVehicleId() != 0) {
+          setVehicleId(other.getVehicleId());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        net.vbunova.grpc.VehicleService.NearbyVehiclesResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (net.vbunova.grpc.VehicleService.NearbyVehiclesResponse) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int vehicleId_ ;
+      /**
+       * <code>int32 vehicleId = 1;</code>
+       * @return The vehicleId.
+       */
+      public int getVehicleId() {
+        return vehicleId_;
+      }
+      /**
+       * <code>int32 vehicleId = 1;</code>
+       * @param value The vehicleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVehicleId(int value) {
+        
+        vehicleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 vehicleId = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearVehicleId() {
+        
+        vehicleId_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:NearbyVehiclesResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:NearbyVehiclesResponse)
+    private static final net.vbunova.grpc.VehicleService.NearbyVehiclesResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new net.vbunova.grpc.VehicleService.NearbyVehiclesResponse();
+    }
+
+    public static net.vbunova.grpc.VehicleService.NearbyVehiclesResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<NearbyVehiclesResponse>
+        PARSER = new com.google.protobuf.AbstractParser<NearbyVehiclesResponse>() {
+      @java.lang.Override
+      public NearbyVehiclesResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new NearbyVehiclesResponse(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<NearbyVehiclesResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<NearbyVehiclesResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public net.vbunova.grpc.VehicleService.NearbyVehiclesResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface SendChatMessageResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:SendChatMessageResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string message = 1;</code>
+     * @return The message.
+     */
+    java.lang.String getMessage();
+    /**
+     * <code>string message = 1;</code>
+     * @return The bytes for message.
+     */
+    com.google.protobuf.ByteString
+        getMessageBytes();
+  }
+  /**
+   * Protobuf type {@code SendChatMessageResponse}
+   */
+  public  static final class SendChatMessageResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:SendChatMessageResponse)
+      SendChatMessageResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use SendChatMessageResponse.newBuilder() to construct.
+    private SendChatMessageResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private SendChatMessageResponse() {
+      message_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new SendChatMessageResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SendChatMessageResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              message_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return net.vbunova.grpc.VehicleService.internal_static_SendChatMessageResponse_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return net.vbunova.grpc.VehicleService.internal_static_SendChatMessageResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              net.vbunova.grpc.VehicleService.SendChatMessageResponse.class, net.vbunova.grpc.VehicleService.SendChatMessageResponse.Builder.class);
+    }
+
+    public static final int MESSAGE_FIELD_NUMBER = 1;
+    private volatile java.lang.Object message_;
+    /**
+     * <code>string message = 1;</code>
+     * @return The message.
+     */
+    public java.lang.String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        message_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string message = 1;</code>
+     * @return The bytes for message.
+     */
+    public com.google.protobuf.ByteString
+        getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, message_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, message_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof net.vbunova.grpc.VehicleService.SendChatMessageResponse)) {
+        return super.equals(obj);
+      }
+      net.vbunova.grpc.VehicleService.SendChatMessageResponse other = (net.vbunova.grpc.VehicleService.SendChatMessageResponse) obj;
+
+      if (!getMessage()
+          .equals(other.getMessage())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getMessage().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static net.vbunova.grpc.VehicleService.SendChatMessageResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static net.vbunova.grpc.VehicleService.SendChatMessageResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(net.vbunova.grpc.VehicleService.SendChatMessageResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code SendChatMessageResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:SendChatMessageResponse)
+        net.vbunova.grpc.VehicleService.SendChatMessageResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return net.vbunova.grpc.VehicleService.internal_static_SendChatMessageResponse_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return net.vbunova.grpc.VehicleService.internal_static_SendChatMessageResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                net.vbunova.grpc.VehicleService.SendChatMessageResponse.class, net.vbunova.grpc.VehicleService.SendChatMessageResponse.Builder.class);
+      }
+
+      // Construct using net.vbunova.grpc.VehicleService.SendChatMessageResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        message_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return net.vbunova.grpc.VehicleService.internal_static_SendChatMessageResponse_descriptor;
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.SendChatMessageResponse getDefaultInstanceForType() {
+        return net.vbunova.grpc.VehicleService.SendChatMessageResponse.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.SendChatMessageResponse build() {
+        net.vbunova.grpc.VehicleService.SendChatMessageResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public net.vbunova.grpc.VehicleService.SendChatMessageResponse buildPartial() {
+        net.vbunova.grpc.VehicleService.SendChatMessageResponse result = new net.vbunova.grpc.VehicleService.SendChatMessageResponse(this);
+        result.message_ = message_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof net.vbunova.grpc.VehicleService.SendChatMessageResponse) {
+          return mergeFrom((net.vbunova.grpc.VehicleService.SendChatMessageResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(net.vbunova.grpc.VehicleService.SendChatMessageResponse other) {
+        if (other == net.vbunova.grpc.VehicleService.SendChatMessageResponse.getDefaultInstance()) return this;
+        if (!other.getMessage().isEmpty()) {
+          message_ = other.message_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        net.vbunova.grpc.VehicleService.SendChatMessageResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (net.vbunova.grpc.VehicleService.SendChatMessageResponse) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object message_ = "";
+      /**
+       * <code>string message = 1;</code>
+       * @return The message.
+       */
+      public java.lang.String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          message_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string message = 1;</code>
+       * @return The bytes for message.
+       */
+      public com.google.protobuf.ByteString
+          getMessageBytes() {
+        java.lang.Object ref = message_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          message_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string message = 1;</code>
+       * @param value The message to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMessage(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string message = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMessage() {
+        
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string message = 1;</code>
+       * @param value The bytes for message to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMessageBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:SendChatMessageResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:SendChatMessageResponse)
+    private static final net.vbunova.grpc.VehicleService.SendChatMessageResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new net.vbunova.grpc.VehicleService.SendChatMessageResponse();
+    }
+
+    public static net.vbunova.grpc.VehicleService.SendChatMessageResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<SendChatMessageResponse>
+        PARSER = new com.google.protobuf.AbstractParser<SendChatMessageResponse>() {
+      @java.lang.Override
+      public SendChatMessageResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SendChatMessageResponse(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<SendChatMessageResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<SendChatMessageResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public net.vbunova.grpc.VehicleService.SendChatMessageResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VehicleInformationRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_VehicleInformationRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_ShareSpeedAndRouteRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_ShareSpeedAndRouteRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_NearbyVehiclesRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_NearbyVehiclesRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_SendChatMessageRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_SendChatMessageRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VehicleInformationResponse_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_VehicleInformationResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_ShareSpeedAndRouteResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_ShareSpeedAndRouteResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_NearbyVehiclesResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_NearbyVehiclesResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_SendChatMessageResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_SendChatMessageResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1086,12 +4785,25 @@ public final class VehicleService {
   static {
     java.lang.String[] descriptorData = {
       "\n\024vehicleService.proto\"\033\n\031VehicleInforma" +
-      "tionRequest\"A\n\032VehicleInformationRespons" +
-      "e\022\021\n\tvehicleId\030\001 \001(\005\022\020\n\010metadata\030\002 \001(\t2b" +
-      "\n\016vehicleService\022P\n\025getVehicleInformatio" +
-      "n\022\032.VehicleInformationRequest\032\033.VehicleI" +
-      "nformationResponseB\022\n\020net.vbunova.grpcb\006" +
-      "proto3"
+      "tionRequest\"H\n\031ShareSpeedAndRouteRequest" +
+      "\022\021\n\tvehicleId\030\001 \001(\005\022\013\n\003lat\030\002 \001(\t\022\013\n\003lon\030" +
+      "\003 \001(\t\"1\n\025NearbyVehiclesRequest\022\013\n\003lat\030\001 " +
+      "\001(\t\022\013\n\003lon\030\002 \001(\t\"<\n\026SendChatMessageReque" +
+      "st\022\021\n\tvehicleId\030\001 \001(\005\022\017\n\007message\030\002 \001(\t\"A" +
+      "\n\032VehicleInformationResponse\022\021\n\tvehicleI" +
+      "d\030\001 \001(\005\022\020\n\010metadata\030\002 \001(\t\",\n\032ShareSpeedA" +
+      "ndRouteResponse\022\016\n\006status\030\001 \001(\010\"+\n\026Nearb" +
+      "yVehiclesResponse\022\021\n\tvehicleId\030\001 \001(\005\"*\n\027" +
+      "SendChatMessageResponse\022\017\n\007message\030\001 \001(\t" +
+      "2\305\002\n\016vehicleService\022P\n\025getVehicleInforma" +
+      "tion\022\032.VehicleInformationRequest\032\033.Vehic" +
+      "leInformationResponse\022O\n\022shareSpeedAndRo" +
+      "ute\022\032.ShareSpeedAndRouteRequest\032\033.ShareS" +
+      "peedAndRouteResponse0\001\022F\n\021getNearbyVehic" +
+      "les\022\026.NearbyVehiclesRequest\032\027.NearbyVehi" +
+      "clesResponse(\001\022H\n\017sendChatMessage\022\027.Send" +
+      "ChatMessageRequest\032\030.SendChatMessageResp" +
+      "onse(\0010\001B\022\n\020net.vbunova.grpcb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1103,12 +4815,48 @@ public final class VehicleService {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VehicleInformationRequest_descriptor,
         new java.lang.String[] { });
-    internal_static_VehicleInformationResponse_descriptor =
+    internal_static_ShareSpeedAndRouteRequest_descriptor =
       getDescriptor().getMessageTypes().get(1);
+    internal_static_ShareSpeedAndRouteRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_ShareSpeedAndRouteRequest_descriptor,
+        new java.lang.String[] { "VehicleId", "Lat", "Lon", });
+    internal_static_NearbyVehiclesRequest_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_NearbyVehiclesRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_NearbyVehiclesRequest_descriptor,
+        new java.lang.String[] { "Lat", "Lon", });
+    internal_static_SendChatMessageRequest_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_SendChatMessageRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_SendChatMessageRequest_descriptor,
+        new java.lang.String[] { "VehicleId", "Message", });
+    internal_static_VehicleInformationResponse_descriptor =
+      getDescriptor().getMessageTypes().get(4);
     internal_static_VehicleInformationResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VehicleInformationResponse_descriptor,
         new java.lang.String[] { "VehicleId", "Metadata", });
+    internal_static_ShareSpeedAndRouteResponse_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_ShareSpeedAndRouteResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_ShareSpeedAndRouteResponse_descriptor,
+        new java.lang.String[] { "Status", });
+    internal_static_NearbyVehiclesResponse_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_NearbyVehiclesResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_NearbyVehiclesResponse_descriptor,
+        new java.lang.String[] { "VehicleId", });
+    internal_static_SendChatMessageResponse_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_SendChatMessageResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_SendChatMessageResponse_descriptor,
+        new java.lang.String[] { "Message", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
