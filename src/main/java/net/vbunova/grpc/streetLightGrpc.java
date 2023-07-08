@@ -1,7 +1,5 @@
 package net.vbunova.grpc;
 
-import io.grpc.stub.StreamObserver;
-
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
 import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
@@ -199,18 +197,16 @@ public final class streetLightGrpc {
     }
 
     /**
-     *
      */
-    public StreamObserver<StreetLight.ShareSpeedAndRouteResponse> shareSpeedAndRoute(
-        StreamObserver<StreetLight.ShareSpeedAndRouteResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLight.ShareSpeedAndRouteRequest> shareSpeedAndRoute(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLight.ShareSpeedAndRouteResponse> responseObserver) {
       return asyncUnimplementedStreamingCall(getShareSpeedAndRouteMethod(), responseObserver);
     }
 
     /**
-     *
      */
-    public StreamObserver<StreetLight.SendChatMessageResponse> sendChatMessage(
-        StreamObserver<StreetLight.SendChatMessageResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLight.SendChatMessageRequest> sendChatMessage(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.StreetLight.SendChatMessageResponse> responseObserver) {
       return asyncUnimplementedStreamingCall(getSendChatMessageMethod(), responseObserver);
     }
 

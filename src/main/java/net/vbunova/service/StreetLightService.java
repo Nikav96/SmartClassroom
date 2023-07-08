@@ -2,7 +2,6 @@ package net.vbunova.service;
 
 import io.grpc.stub.StreamObserver;
 import net.vbunova.grpc.StreetLight;
-import net.vbunova.grpc.Vehicle;
 import net.vbunova.grpc.streetLightGrpc;
 
 public class StreetLightService extends streetLightGrpc.streetLightImplBase {
@@ -34,12 +33,12 @@ public class StreetLightService extends streetLightGrpc.streetLightImplBase {
     }
 
     @Override
-    public StreamObserver<StreetLight.ShareSpeedAndRouteResponse> shareSpeedAndRoute(StreamObserver<StreetLight.ShareSpeedAndRouteResponse> responseObserver) {
-        return new StreamObserver<StreetLight.ShareSpeedAndRouteResponse>() {
+    public StreamObserver<StreetLight.ShareSpeedAndRouteRequest> shareSpeedAndRoute(StreamObserver<StreetLight.ShareSpeedAndRouteResponse> responseObserver) {
+        return new StreamObserver<StreetLight.ShareSpeedAndRouteRequest>() {
 
             int vehicleId = 0;
             @Override
-            public void onNext(StreetLight.ShareSpeedAndRouteResponse response) {
+            public void onNext(StreetLight.ShareSpeedAndRouteRequest response) {
                 vehicleId++;
             }
 
@@ -60,11 +59,11 @@ public class StreetLightService extends streetLightGrpc.streetLightImplBase {
     }
 
     @Override
-    public StreamObserver<StreetLight.SendChatMessageResponse> sendChatMessage(StreamObserver<StreetLight.SendChatMessageResponse> responseObserver) {
-        return new StreamObserver<StreetLight.SendChatMessageResponse>() {
+    public StreamObserver<StreetLight.SendChatMessageRequest> sendChatMessage(StreamObserver<StreetLight.SendChatMessageResponse> responseObserver) {
+        return new StreamObserver<StreetLight.SendChatMessageRequest>() {
 
             @Override
-            public void onNext(StreetLight.SendChatMessageResponse sendChatMessageResponse) {
+            public void onNext(StreetLight.SendChatMessageRequest sendChatMessageRequest) {
                 for (int i = 1; i <= 5; i++) {
                     StreetLight.SendChatMessageResponse response = StreetLight.SendChatMessageResponse.newBuilder()
                             .setMessage("This is some chat message...")

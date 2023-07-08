@@ -29,10 +29,10 @@ public class GeolocationService extends geolocationGrpc.geolocationImplBase {
     }
 
     @Override
-    public StreamObserver<Geolocation.ShareSpeedAndRouteResponse> shareSpeedAndRoute(StreamObserver<Geolocation.ShareSpeedAndRouteResponse> responseObserver) {
-        return new StreamObserver<Geolocation.ShareSpeedAndRouteResponse>() {
+    public StreamObserver<Geolocation.ShareSpeedAndRouteRequest> shareSpeedAndRoute(StreamObserver<Geolocation.ShareSpeedAndRouteResponse> responseObserver) {
+        return new StreamObserver<Geolocation.ShareSpeedAndRouteRequest>() {
             @Override
-            public void onNext(Geolocation.ShareSpeedAndRouteResponse response) {
+            public void onNext(Geolocation.ShareSpeedAndRouteRequest response) {
 
             }
 
@@ -53,11 +53,11 @@ public class GeolocationService extends geolocationGrpc.geolocationImplBase {
     }
 
     @Override
-    public StreamObserver<Geolocation.SendChatMessageResponse> sendChatMessage(StreamObserver<Geolocation.SendChatMessageResponse> responseObserver) {
-        return new StreamObserver<Geolocation.SendChatMessageResponse>() {
+    public StreamObserver<Geolocation.SendChatMessageRequest> sendChatMessage(StreamObserver<Geolocation.SendChatMessageResponse> responseObserver) {
+        return new StreamObserver<Geolocation.SendChatMessageRequest>() {
 
             @Override
-            public void onNext(Geolocation.SendChatMessageResponse sendChatMessageResponse) {
+            public void onNext(Geolocation.SendChatMessageRequest sendChatMessageResponse) {
                 for (int i = 1; i <= 5; i++) {
                     Geolocation.SendChatMessageResponse response = Geolocation.SendChatMessageResponse.newBuilder()
                             .setMessage("This is some chat message...")

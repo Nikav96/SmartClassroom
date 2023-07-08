@@ -1,7 +1,5 @@
 package net.vbunova.grpc;
 
-import io.grpc.stub.StreamObserver;
-
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
 import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
@@ -199,18 +197,16 @@ public final class vehicleGrpc {
     }
 
     /**
-     *
      */
-    public StreamObserver<Vehicle.NearbyVehiclesResponse> getNearbyVehicles(
-        StreamObserver<Vehicle.NearbyVehiclesResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.Vehicle.NearbyVehiclesRequest> getNearbyVehicles(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.Vehicle.NearbyVehiclesResponse> responseObserver) {
       return asyncUnimplementedStreamingCall(getGetNearbyVehiclesMethod(), responseObserver);
     }
 
     /**
-     *
      */
-    public StreamObserver<Vehicle.SendChatMessageResponse> sendChatMessage(
-        StreamObserver<Vehicle.SendChatMessageResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.Vehicle.SendChatMessageRequest> sendChatMessage(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.Vehicle.SendChatMessageResponse> responseObserver) {
       return asyncUnimplementedStreamingCall(getSendChatMessageMethod(), responseObserver);
     }
 

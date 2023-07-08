@@ -31,12 +31,14 @@ public class VehicleService extends vehicleGrpc.vehicleImplBase {
     }
 
     @Override
-    public StreamObserver<Vehicle.NearbyVehiclesResponse> getNearbyVehicles(StreamObserver<Vehicle.NearbyVehiclesResponse> responseObserver) {
-        return new StreamObserver<Vehicle.NearbyVehiclesResponse>() {
+    public StreamObserver<Vehicle.NearbyVehiclesRequest> getNearbyVehicles(StreamObserver<Vehicle.NearbyVehiclesResponse> responseObserver) {
+
+
+        return new StreamObserver<Vehicle.NearbyVehiclesRequest>() {
 
             int vehicleId = 0;
             @Override
-            public void onNext(Vehicle.NearbyVehiclesResponse response) {
+            public void onNext(Vehicle.NearbyVehiclesRequest response) {
                 vehicleId++;
             }
 
@@ -57,12 +59,12 @@ public class VehicleService extends vehicleGrpc.vehicleImplBase {
     }
 
     @Override
-    public StreamObserver<Vehicle.SendChatMessageResponse> sendChatMessage(StreamObserver<Vehicle.SendChatMessageResponse> responseObserver) {
+    public StreamObserver<Vehicle.SendChatMessageRequest> sendChatMessage(StreamObserver<Vehicle.SendChatMessageResponse> responseObserver) {
 
-        return new StreamObserver<Vehicle.SendChatMessageResponse>() {
+        return new StreamObserver<Vehicle.SendChatMessageRequest>() {
 
             @Override
-            public void onNext(Vehicle.SendChatMessageResponse sendChatMessageResponse) {
+            public void onNext(Vehicle.SendChatMessageRequest sendChatMessageResponse) {
                 for (int i = 1; i <= 5; i++) {
                     Vehicle.SendChatMessageResponse response = Vehicle.SendChatMessageResponse.newBuilder()
                             .setMessage("This is some chat message...")

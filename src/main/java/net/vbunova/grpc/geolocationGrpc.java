@@ -1,7 +1,5 @@
 package net.vbunova.grpc;
 
-import io.grpc.stub.StreamObserver;
-
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
 import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
@@ -199,18 +197,16 @@ public final class geolocationGrpc {
     }
 
     /**
-     *
      */
-    public StreamObserver<Geolocation.ShareSpeedAndRouteResponse> shareSpeedAndRoute(
-        StreamObserver<Geolocation.ShareSpeedAndRouteResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.Geolocation.ShareSpeedAndRouteRequest> shareSpeedAndRoute(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.Geolocation.ShareSpeedAndRouteResponse> responseObserver) {
       return asyncUnimplementedStreamingCall(getShareSpeedAndRouteMethod(), responseObserver);
     }
 
     /**
-     *
      */
-    public StreamObserver<Geolocation.SendChatMessageResponse> sendChatMessage(
-        StreamObserver<Geolocation.SendChatMessageResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<net.vbunova.grpc.Geolocation.SendChatMessageRequest> sendChatMessage(
+        io.grpc.stub.StreamObserver<net.vbunova.grpc.Geolocation.SendChatMessageResponse> responseObserver) {
       return asyncUnimplementedStreamingCall(getSendChatMessageMethod(), responseObserver);
     }
 
